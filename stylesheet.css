@@ -1,0 +1,81 @@
+/* RGB Coolors Palette *****************************
+$color1: rgba(255, 234, 208, 1);****Blanched****
+$color2: rgba(147, 183, 190, 1);****Pewter Blue****
+$color3: rgba(84, 94, 117, 1);****Black Coral****
+$color4: rgba(165, 166, 175, 1);****Quick Silver****
+$color5: rgba(166, 58, 80, 1);   ****English Red****
+****************************************************/
+
+
+/******Center your site’s header on the page*****/
+html {
+    font-size: 1.25em;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(165, 166, 175, 1);
+    background-color: rgba(255, 234, 208, 1);
+}
+header {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(84, 94, 117, 1);
+    color: rgba(147, 183, 190, 1);
+    width: 100%;
+    flex-wrap: wrap;
+}
+header h1 {
+    padding: 10px;
+}
+body h2 {
+    padding-left: 10px;
+}
+p {
+    padding: 0px 15px;
+}
+.img-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img-bar img {
+    box-shadow: 5px 10px rgba(165, 166, 175, 0.6);
+    margin: 10px;
+}
+a {
+    color: rgba(147, 183, 190, 1);
+}
+a:hover {
+    color: rgba(165, 166, 175, 1);
+    text-decoration: none;
+}
+
+
+/********************************************************/
+
+/***Use border-radius & box-shadow on imgs***/
+img {
+    border-radius: 10%;
+
+}
+/****Center form on contact pg****/
+/****Put border around form. Padding around form****/
+/**Inputs inside form should have spacing between**/
+
+/***Media Queries that change layout of navigation and imgs to reflect wireframes***/
+
+/****Use FLEXBOX for responsiveness****/
+@media (min-width: 768px) {
+
+    .img-bar {
+        flex-direction: row;
+    }
+}
