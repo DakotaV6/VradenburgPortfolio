@@ -8,6 +8,10 @@ $color5: rgba(166, 58, 80, 1);   ****English Red****
 
 
 /******Center your site’s header on the page*****/
+/*********************
+    Global Styles 
+**********************/
+/* border box fix*/
 html {
     font-size: 1.25em;
     box-sizing: border-box;
@@ -15,40 +19,15 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     color: rgba(165, 166, 175, 1);
     background-color: rgba(255, 234, 208, 1);
-}
-header {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(84, 94, 117, 1);
-    color: rgba(147, 183, 190, 1);
-    width: 100%;
-    flex-wrap: wrap;
-}
-header h1 {
-    padding: 10px;
-}
-body h2 {
-    padding-left: 10px;
+    margin: 0;
 }
 p {
     padding: 0px 15px;
-}
-.img-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.img-bar img {
-    box-shadow: 5px 10px rgba(165, 166, 175, 0.6);
-    margin: 10px;
 }
 a {
     color: rgba(147, 183, 190, 1);
@@ -57,15 +36,101 @@ a:hover {
     color: rgba(165, 166, 175, 1);
     text-decoration: none;
 }
-
-
-/********************************************************/
-
-/***Use border-radius & box-shadow on imgs***/
-img {
-    border-radius: 10%;
-
+body h2 {
+    padding-left: 10px;
 }
+.red {
+    color: rgba(166, 58, 80, 1);
+}
+.content-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*********************
+   Header and Footer 
+**********************/
+/* header */
+header {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(84, 94, 117, 1);
+    color: rgba(147, 183, 190, 1);
+    padding: 10px;
+}
+header h1 {
+    text-align: center;
+}
+/* footer */
+footer {
+    text-align: center;
+    position: relative;
+    background-color: rgba(84, 94, 117, 1);
+}
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+.fa-envelope {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fa-linkedin-in {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fa-github {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fa-spotify {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*********************
+      Navigation 
+**********************/
+nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    padding-top: 5px;
+}
+/*********************
+      Home Page 
+**********************/
+.img-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img-bar img {
+    box-shadow: 5px 10px rgba(165, 166, 175, 0.6);
+    border-radius: 10%;
+    margin: 10px;
+}
+/*********************
+    Contact Page 
+**********************/
+
+/*********************
+    Media Queries 
+**********************/
+@media (min-width: 768px) {
+
+    .img-bar {
+        flex-direction: row;
+    }
+}
+/********************************************************/
 /****Center form on contact pg****/
 /****Put border around form. Padding around form****/
 /**Inputs inside form should have spacing between**/
@@ -73,9 +138,3 @@ img {
 /***Media Queries that change layout of navigation and imgs to reflect wireframes***/
 
 /****Use FLEXBOX for responsiveness****/
-@media (min-width: 768px) {
-
-    .img-bar {
-        flex-direction: row;
-    }
-}
