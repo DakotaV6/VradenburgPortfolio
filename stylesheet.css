@@ -69,6 +69,7 @@ header h1 {
 footer {
     text-align: center;
     position: relative;
+    bottom: 0;
     background-color: rgba(84, 94, 117, 1);
 }
 .contact-info a {
@@ -94,6 +95,7 @@ footer {
     font-size: 30px;
     padding-left: 20px;
     padding-right: 20px;
+    color: black;
 }
 /*********************
       Navigation 
@@ -116,11 +118,34 @@ nav {
     box-shadow: 5px 10px rgba(165, 166, 175, 0.6);
     border-radius: 10%;
     margin: 10px;
+    width: 200px;
 }
 /*********************
     Contact Page 
 **********************/
-
+form {
+    border: 5px solid rgba(166, 58, 80, 1);
+    padding: 10px;
+    max-width: 600px;
+    margin: 15px auto;
+}
+.form-row {
+    padding: 10px 0;
+    display: flex;
+}
+.form-row label {
+    padding-right: 5px;
+}
+.form-row input {
+    flex: .75;
+}
+.form-row #submit {
+    flex: 1;
+}
+.formBox {
+    display: flex;
+    justify-content: center;
+}
 /*********************
     Media Queries 
 **********************/
@@ -129,11 +154,12 @@ nav {
     .img-bar {
         flex-direction: row;
     }
+    .img-bar img {
+        flex: 1;
+        height: 300px;
+    }
 }
 /********************************************************/
-/****Center form on contact pg****/
-/****Put border around form. Padding around form****/
-/**Inputs inside form should have spacing between**/
 
 /***Media Queries that change layout of navigation and imgs to reflect wireframes***/
 
