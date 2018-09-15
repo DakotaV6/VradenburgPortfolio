@@ -6,8 +6,6 @@ $color4: rgba(165, 166, 175, 1);****Quick Silver****
 $color5: rgba(166, 58, 80, 1);   ****English Red****
 ****************************************************/
 
-
-/******Center your site’s header on the page*****/
 /*********************
     Global Styles 
 **********************/
@@ -178,7 +176,3 @@ form {
     }
 }
 /********************************************************/
-
-/***Media Queries that change layout of navigation and imgs to reflect wireframes***/
-
-/****Use FLEXBOX for responsiveness****/
